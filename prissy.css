@@ -1,0 +1,17 @@
+p {
+    color: pink;
+    font-size: 22px
+}
+.card {
+    background-color: grey;
+    padding: 15px;
+    border-radius: 8px;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+body{
+    background-color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+}
