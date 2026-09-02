@@ -3,26 +3,38 @@
     <head>
         <title>Priscilla's page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-          <h1>Priscilla</h1>
+          <h1 id="page-heading">Priscilla</h1>
           <p>I'm learning web development, one line at a time.</p>
           <img src="https://placehold.co/200" alt="Placeholder profile photo">
         </header>
        
          <main>
              <div class="grid">
-                <div class="grid-item">HTML</div>
-                <div class="grid-item">CSS</div>
-                <div class="grid-item">javascript</div>
-                <div class="grid-item">python</div>
+              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">HTML</div>
+              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">CSS</div>
+              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">javascript</div>
+              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">python</div>
              </div>
         </main>
         
         <footer>
           <a href="https://github.com">My Github</a>  
         </footer>
+        <input type="checkbox" id="modal-toggle" style="display:none;">
+        <label for="modal-toggle" class="open-btn">open popup</label>
+
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <p> This is a popup! it sits on top of everything else</p>
+                <label for="modal-toggle" class="close-btn">close</label>
+            </div>
+        </div>
+
     </body>
 </html>
