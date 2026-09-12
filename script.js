@@ -184,12 +184,19 @@ fetch("https://api.chucknorris.io/jokes/random")
   .then(function(data) {
     console.log(data);
     document.getElementById("joke-text").textContent = data.value;
+  })
+   .catch(function(error) {
+    document.getElementById("joke-text").textContent = "Couldn't load a joke. Try again!";
+    console.log(error);
   });
   }
+ 
 getNewJoke();
+
 
 const newJokeBtn = document.getElementById("new-joke-btn");
 
 newJokeBtn.addEventListener("click", function() {
   getNewJoke();
 });
+
