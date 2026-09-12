@@ -52,10 +52,6 @@ body {
     z-index: 100;
 }
 
-#modal-toggle:checked ~ .modal-overlay {
-    display: flex;
-}
-
 .modal-box {
   background: white;
   padding: var(--spacing-lg);

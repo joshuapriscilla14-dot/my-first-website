@@ -13,28 +13,31 @@
           <p>I'm learning web development, one line at a time.</p>
           <img src="https://placehold.co/200" alt="Placeholder profile photo">
         </header>
+        <p id="joke-text">Loading joke...</p>
+        <button id="new-joke-btn">new joke</button>
+       
        
          <main>
+            <div>
+                <input type="text" id="skill-input" placeholder="Add new skill">
+                <button id="add-skill-btn">Add</button>
+            </div>
              <div class="grid">
-              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">HTML</div>
-              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">CSS</div>
-              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">javascript</div>
-              <div class="bg-white p-5 rounded-lg text-center shadow hover:scale-105 transition">python</div>
              </div>
         </main>
         
         <footer>
           <a href="https://github.com">My Github</a>  
         </footer>
-        <input type="checkbox" id="modal-toggle" style="display:none;">
-        <label for="modal-toggle" class="open-btn">open popup</label>
+       
 
-        <div class="modal-overlay">
-            <div class="modal-box">
-                <p> This is a popup! it sits on top of everything else</p>
-                <label for="modal-toggle" class="close-btn">close</label>
-            </div>
+       <button id="open-btn">open popup</button>
+       <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+            <p>This is a popup! it sits on top of everything else</p>
+            <button id="close-btn">close</button>
         </div>
-
+       </div>
+        <script src="script.js"></script>
     </body>
 </html>
